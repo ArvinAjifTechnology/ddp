@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Arvin M Ajif"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-27 08.13.29 AM"/>
+        <attribute name="created" value="QXJ2aW4gTSBBamlmO0RFU0tUT1AtUkpERUFJMTsyMDIyLTA0LTI3OzA4LjA1LjIxIEFNOzMzMzQ="/>
+        <attribute name="edited" value="QXJ2aW4gTSBBamlmO0RFU0tUT1AtUkpERUFJMTsyMDIyLTA0LTI3OzA4LjEzLjI5IEFNOzE7MzQ0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NA" type="Integer" array="False" size=""/>
+            <output expression="&quot;Masukan Nilai Akhir&quot;" newline="True"/>
+            <input variable="NA"/>
+            <if expression="NA &gt;= 60">
+                <then>
+                    <output expression="&quot;Anda Lulus&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Anda Tidak Lulus&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

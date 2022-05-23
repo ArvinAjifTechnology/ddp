@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Arvin M Ajif"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-04-27 08.35.47 AM"/>
+        <attribute name="created" value="QXJ2aW4gTSBBamlmO0RFU0tUT1AtUkpERUFJMTsyMDIyLTA0LTI3OzA4LjEzLjMxIEFNOzMzMzQ="/>
+        <attribute name="edited" value="QXJ2aW4gTSBBamlmO0RFU0tUT1AtUkpERUFJMTsyMDIyLTA0LTI3OzA4LjM1LjQ3IEFNOzU7MzQ1Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NilaiTugas, NilaiUTS, NilaiUAS" type="Integer" array="False" size=""/>
+            <declare name="NilaiAkhir" type="Real" array="False" size=""/>
+            <output expression="&quot;Input Nilai Tugas : &quot;" newline="True"/>
+            <input variable="NilaiTugas"/>
+            <output expression="&quot;Input Nilai UTS : &quot;" newline="True"/>
+            <input variable="NilaiUTS"/>
+            <output expression="&quot;Input Nilai UAS : &quot;" newline="True"/>
+            <input variable="NilaiUAS"/>
+            <assign variable="NilaiAkhir" expression="(NilaiTugas*30/100)+(NilaiUTS*30/100)+(NilaiUAS*40/100)"/>
+            <output expression="&quot;NIlai AKhir :&quot;" newline="True"/>
+            <output expression="NilaiAkhir" newline="True"/>
+            <if expression="NilaiAkhir &gt; 85">
+                <then>
+                    <output expression="&quot;A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="NIlaiAkhir &gt; 70">
+                        <then>
+                            <output expression="&quot;B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="NIlaiAkhir &gt; 55">
+                                <then>
+                                    <output expression="&quot;C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="NIlaiAkhir &gt; 40">
+                                        <then>
+                                            <output expression="&quot;D&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="NIlaiAkhir &gt; 0">
+                                                <then>
+                                                    <output expression="&quot;E&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
